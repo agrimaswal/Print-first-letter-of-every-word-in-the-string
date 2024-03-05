@@ -1,0 +1,17 @@
+
+class Solution {
+    String firstAlphabet(String S) {
+        StringBuilder result=new StringBuilder();
+
+        String[] words=S.split(" ");
+
+
+        for(String word:words){
+            if(!word.isEmpty()){
+            result.append(word.charAt(0));
+        }
+    }
+
+    return result.toString();
+    }
+}
